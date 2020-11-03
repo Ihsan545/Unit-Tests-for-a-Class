@@ -38,6 +38,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_class_name_gpa(self):
         name = _student.Student('Anwary', 'Ihsan', 'BIS', 54.0)
+        self.assertEqual('Anwary,Ihsan', 'Anwary,Ihsan')
+
+    def test_isinstance_gpa_float(self):
+        self.assertEqual(self.studen.gpa, 60.0)
 
 
 
