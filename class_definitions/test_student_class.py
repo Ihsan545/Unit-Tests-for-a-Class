@@ -20,6 +20,7 @@ class MyTestCase(unittest.TestCase):
     def tearDown(self):
         del self.studen
 
+    def test_initial_value_required_attributes(self):
 
 
 if __name__ == '__main__':
