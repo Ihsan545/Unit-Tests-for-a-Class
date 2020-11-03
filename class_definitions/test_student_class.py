@@ -24,7 +24,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.studen.last_name, 'Anwary')
         self.assertEqual(self.studen.first_name, 'Ihsan')
 
-
+    def test_not_created_error_last_name(self):
+        with self.assertRaises(ValueError):
 
 
 if __name__ == '__main__':
