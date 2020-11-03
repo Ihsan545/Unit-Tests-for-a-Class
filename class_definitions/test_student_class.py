@@ -17,6 +17,8 @@ class MyTestCase(unittest.TestCase):
     def setUp(self):
         self.studen = _student.Student('Anwary', 'Ihsan', 'BIS', 60.0)
 
+    def tearDown(self):
+        del self.studen
 
 
 
