@@ -36,6 +36,10 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             name = _student.Student('Anwary', 'Ihsan', '55', 66.5)
 
+    def test_class_name_gpa(self):
+        name = _student.Student('Anwary', 'Ihsan', 'BIS', 54.0)
+
+
 
 if __name__ == '__main__':
     unittest.main()
