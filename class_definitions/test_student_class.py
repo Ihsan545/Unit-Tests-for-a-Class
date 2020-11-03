@@ -21,6 +21,10 @@ class MyTestCase(unittest.TestCase):
         del self.studen
 
     def test_initial_value_required_attributes(self):
+        self.assertEqual(self.studen.last_name, 'Anwary')
+        self.assertEqual(self.studen.first_name, 'Ihsan')
+
+
 
 
 if __name__ == '__main__':
