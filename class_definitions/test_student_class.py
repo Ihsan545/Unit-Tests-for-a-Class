@@ -47,7 +47,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.studen.first_name, 'Ihsan')
 
     def test_craete_laststname(self):
-
+        self.assertEqual(self.studen.last_name, 'Anwary')
 
 
 if __name__ == '__main__':
