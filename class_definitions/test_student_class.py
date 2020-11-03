@@ -26,7 +26,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_not_created_error_last_name(self):
         with self.assertRaises(ValueError):
+            name = _student.Student('555', 'Ihsan', "BIS", 55.0)
 
+    def test_created_error_fist_name(self):
+        with self.assertRaises(ValueError):
 
 if __name__ == '__main__':
     unittest.main()
